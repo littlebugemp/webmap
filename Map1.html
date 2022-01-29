@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_2affd80d84a74e7bb456d7ee9f0d666a {
+                #map_c0dd351926ec46cc982caab8e9070f79 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_2affd80d84a74e7bb456d7ee9f0d666a" ></div>
+            <div class="folium-map" id="map_c0dd351926ec46cc982caab8e9070f79" ></div>
         
 </body>
 <script>    
     
-            var map_2affd80d84a74e7bb456d7ee9f0d666a = L.map(
-                "map_2affd80d84a74e7bb456d7ee9f0d666a",
+            var map_c0dd351926ec46cc982caab8e9070f79 = L.map(
+                "map_c0dd351926ec46cc982caab8e9070f79",
                 {
                     center: [29.48829406821279, 77.69980822497845],
                     crs: L.CRS.EPSG3857,
@@ -55,164 +55,212 @@
 
         
     
-            var tile_layer_7af82d6d490445409a1636b989fc3c4e = L.tileLayer(
-                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
-                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_2affd80d84a74e7bb456d7ee9f0d666a);
+            var tile_layer_77edc52644d4414685d6b503b109783c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0dd351926ec46cc982caab8e9070f79);
         
     
-            var feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b = L.featureGroup(
+            var feature_group_51f0042ea6024bb5a0130b06957fc50b = L.featureGroup(
                 {}
-            ).addTo(map_2affd80d84a74e7bb456d7ee9f0d666a);
+            ).addTo(map_c0dd351926ec46cc982caab8e9070f79);
         
     
-            var circle_marker_ea22ce7be8b942208f34f3911be0fa03 = L.circleMarker(
+            var marker_11e5f7a12c8d4c84a016b6c5386a4a7c = L.marker(
                 [12.278, 93.858],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_2d542944780f4bc5b1ebc0598f18caed = L.popup({"maxWidth": "100%"});
+            var icon_32e15d81ced64aa6b328636e69b79bd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11e5f7a12c8d4c84a016b6c5386a4a7c.setIcon(icon_32e15d81ced64aa6b328636e69b79bd1);
+        
+    
+        var popup_6810ee3619624f228ef5c7519b9a1a82 = L.popup({"maxWidth": "100%"});
 
         
-            var html_e80c2117d30e4410bbb2871b3ac1aa9e = $(`<div id="html_e80c2117d30e4410bbb2871b3ac1aa9e" style="width: 100.0%; height: 100.0%;">Barren Island</div>`)[0];
-            popup_2d542944780f4bc5b1ebc0598f18caed.setContent(html_e80c2117d30e4410bbb2871b3ac1aa9e);
+            var i_frame_f6cc265f99ba46cb9d1eb5f20fa426bd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogQmFycmVuIElzbGFuZA==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_6810ee3619624f228ef5c7519b9a1a82.setContent(i_frame_f6cc265f99ba46cb9d1eb5f20fa426bd);
         
 
-        circle_marker_ea22ce7be8b942208f34f3911be0fa03.bindPopup(popup_2d542944780f4bc5b1ebc0598f18caed)
+        marker_11e5f7a12c8d4c84a016b6c5386a4a7c.bindPopup(popup_6810ee3619624f228ef5c7519b9a1a82)
         ;
 
         
     
     
-            var circle_marker_53309d54bf5e4fc7b786cc1345c441c7 = L.circleMarker(
+            var marker_65bbd39a0a0746599ed8c9473c63bece = L.marker(
                 [13.43, 94.28],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_dc2abbab88e74496b54c53a4a24a1a7e = L.popup({"maxWidth": "100%"});
+            var icon_d4b37169dd8a4126a6a73cb545d519e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65bbd39a0a0746599ed8c9473c63bece.setIcon(icon_d4b37169dd8a4126a6a73cb545d519e3);
+        
+    
+        var popup_f110525e7814494e98528184b18a95d3 = L.popup({"maxWidth": "100%"});
 
         
-            var html_d9c14edfa6ff4588b70361390570ea10 = $(`<div id="html_d9c14edfa6ff4588b70361390570ea10" style="width: 100.0%; height: 100.0%;">Narcondam</div>`)[0];
-            popup_dc2abbab88e74496b54c53a4a24a1a7e.setContent(html_d9c14edfa6ff4588b70361390570ea10);
+            var i_frame_6891a255bcf6408594d6cd338e3fe505 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogTmFyY29uZGFt" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f110525e7814494e98528184b18a95d3.setContent(i_frame_6891a255bcf6408594d6cd338e3fe505);
         
 
-        circle_marker_53309d54bf5e4fc7b786cc1345c441c7.bindPopup(popup_dc2abbab88e74496b54c53a4a24a1a7e)
+        marker_65bbd39a0a0746599ed8c9473c63bece.bindPopup(popup_f110525e7814494e98528184b18a95d3)
         ;
 
         
     
     
-            var circle_marker_2289acc232304e5e8ca295be75403f55 = L.circleMarker(
+            var marker_b03165a376244ad8afe2ba39832fee29 = L.marker(
                 [18.51, 73.43],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_eff10f502a6e4fb6b49ca7ba01850fd4 = L.popup({"maxWidth": "100%"});
+            var icon_1fa55f60bb8c408c8ff2839da2de2f24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b03165a376244ad8afe2ba39832fee29.setIcon(icon_1fa55f60bb8c408c8ff2839da2de2f24);
+        
+    
+        var popup_ee421f7cb9374abd8fe9e460d3f68a15 = L.popup({"maxWidth": "100%"});
 
         
-            var html_f7eb3427798141ceb4f0356d36b7d3cf = $(`<div id="html_f7eb3427798141ceb4f0356d36b7d3cf" style="width: 100.0%; height: 100.0%;">Deccan Plateau</div>`)[0];
-            popup_eff10f502a6e4fb6b49ca7ba01850fd4.setContent(html_f7eb3427798141ceb4f0356d36b7d3cf);
+            var i_frame_534ce9ff170c4b35b05b1bc7cb87efa4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogRGVjY2FuIFBsYXRlYXU=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_ee421f7cb9374abd8fe9e460d3f68a15.setContent(i_frame_534ce9ff170c4b35b05b1bc7cb87efa4);
         
 
-        circle_marker_2289acc232304e5e8ca295be75403f55.bindPopup(popup_eff10f502a6e4fb6b49ca7ba01850fd4)
+        marker_b03165a376244ad8afe2ba39832fee29.bindPopup(popup_ee421f7cb9374abd8fe9e460d3f68a15)
         ;
 
         
     
     
-            var circle_marker_c4bf5c9e6fe84c2990cc61176ad6245b = L.circleMarker(
+            var marker_755ccea487954964ad9f8b805885ab69 = L.marker(
                 [12.07, 92.47],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_ce8e948dbda14fba81d590db7689c5bc = L.popup({"maxWidth": "100%"});
+            var icon_69210d3ace6e42bc95c8202445a00052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_755ccea487954964ad9f8b805885ab69.setIcon(icon_69210d3ace6e42bc95c8202445a00052);
+        
+    
+        var popup_f0a23e47f3ce4785a5118c587bfc40df = L.popup({"maxWidth": "100%"});
 
         
-            var html_70b399d7f2c14bdab070838d86a0bb72 = $(`<div id="html_70b399d7f2c14bdab070838d86a0bb72" style="width: 100.0%; height: 100.0%;">Baratang Island</div>`)[0];
-            popup_ce8e948dbda14fba81d590db7689c5bc.setContent(html_70b399d7f2c14bdab070838d86a0bb72);
+            var i_frame_5f60cbd42904450db8c59f88c44ed2b6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogQmFyYXRhbmcgSXNsYW5k" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f0a23e47f3ce4785a5118c587bfc40df.setContent(i_frame_5f60cbd42904450db8c59f88c44ed2b6);
         
 
-        circle_marker_c4bf5c9e6fe84c2990cc61176ad6245b.bindPopup(popup_ce8e948dbda14fba81d590db7689c5bc)
+        marker_755ccea487954964ad9f8b805885ab69.bindPopup(popup_f0a23e47f3ce4785a5118c587bfc40df)
         ;
 
         
     
     
-            var circle_marker_8f244584cf664518b0883a81cf60f037 = L.circleMarker(
+            var marker_390c2e88910e446f891ddb7fd51e8e60 = L.marker(
                 [23.45, 69.34],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_cc6971392bc24c37bc5aae86e08179c6 = L.popup({"maxWidth": "100%"});
+            var icon_bf532e38a94046699977351829f2d0de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_390c2e88910e446f891ddb7fd51e8e60.setIcon(icon_bf532e38a94046699977351829f2d0de);
+        
+    
+        var popup_cc794b756d9d4266a7634df9af938e97 = L.popup({"maxWidth": "100%"});
 
         
-            var html_143b46db0286406fb7ae9b2c425cf109 = $(`<div id="html_143b46db0286406fb7ae9b2c425cf109" style="width: 100.0%; height: 100.0%;">Dhinodhar Hills</div>`)[0];
-            popup_cc6971392bc24c37bc5aae86e08179c6.setContent(html_143b46db0286406fb7ae9b2c425cf109);
+            var i_frame_bef4d62f7ed04069a59c710bad676a09 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogRGhpbm9kaGFyIEhpbGxz" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_cc794b756d9d4266a7634df9af938e97.setContent(i_frame_bef4d62f7ed04069a59c710bad676a09);
         
 
-        circle_marker_8f244584cf664518b0883a81cf60f037.bindPopup(popup_cc6971392bc24c37bc5aae86e08179c6)
+        marker_390c2e88910e446f891ddb7fd51e8e60.bindPopup(popup_cc794b756d9d4266a7634df9af938e97)
         ;
 
         
     
     
-            var circle_marker_627d73230abc42fa8957dabac7c5ed00 = L.circleMarker(
+            var marker_be13d682c2144c0394d227d35552e5ac = L.marker(
                 [28.06, 76.03],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_06ff4e3c2a4848308fb98173ebcdbf15 = L.popup({"maxWidth": "100%"});
+            var icon_fc4c16e8243446e5b86ac5ded5360c50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be13d682c2144c0394d227d35552e5ac.setIcon(icon_fc4c16e8243446e5b86ac5ded5360c50);
+        
+    
+        var popup_16619ac0314640adbfdb4c3fd18bd3f4 = L.popup({"maxWidth": "100%"});
 
         
-            var html_952fb1da67ec447fb24bd29f67bd1ff5 = $(`<div id="html_952fb1da67ec447fb24bd29f67bd1ff5" style="width: 100.0%; height: 100.0%;">Dhosi Hill</div>`)[0];
-            popup_06ff4e3c2a4848308fb98173ebcdbf15.setContent(html_952fb1da67ec447fb24bd29f67bd1ff5);
+            var i_frame_1592724390874515af4abc82365ec051 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogRGhvc2kgSGlsbA==" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_16619ac0314640adbfdb4c3fd18bd3f4.setContent(i_frame_1592724390874515af4abc82365ec051);
         
 
-        circle_marker_627d73230abc42fa8957dabac7c5ed00.bindPopup(popup_06ff4e3c2a4848308fb98173ebcdbf15)
+        marker_be13d682c2144c0394d227d35552e5ac.bindPopup(popup_16619ac0314640adbfdb4c3fd18bd3f4)
         ;
 
         
     
     
-            var circle_marker_a44d22426fd44018bd031b6bb1bbae74 = L.circleMarker(
+            var marker_1a44336a267143239ac0b8c713ef9f7f = L.marker(
                 [28.88, 75.92],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_3e3a0b31d2e04a66a32dba875a39f86e = L.popup({"maxWidth": "100%"});
+            var icon_162184d347dd44febc5748977ecf51dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a44336a267143239ac0b8c713ef9f7f.setIcon(icon_162184d347dd44febc5748977ecf51dd);
+        
+    
+        var popup_e7edfd44365e450fae1f63185fdd5941 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4aa850db4fe1427a98e84dff5295f5e4 = $(`<div id="html_4aa850db4fe1427a98e84dff5295f5e4" style="width: 100.0%; height: 100.0%;">Tosham Hills</div>`)[0];
-            popup_3e3a0b31d2e04a66a32dba875a39f86e.setContent(html_4aa850db4fe1427a98e84dff5295f5e4);
+            var i_frame_cc2f9804541b4f4db19f81b7168ce34e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogVG9zaGFtIEhpbGxz" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_e7edfd44365e450fae1f63185fdd5941.setContent(i_frame_cc2f9804541b4f4db19f81b7168ce34e);
         
 
-        circle_marker_a44d22426fd44018bd031b6bb1bbae74.bindPopup(popup_3e3a0b31d2e04a66a32dba875a39f86e)
+        marker_1a44336a267143239ac0b8c713ef9f7f.bindPopup(popup_e7edfd44365e450fae1f63185fdd5941)
         ;
 
         
     
     
-            var circle_marker_d3c37c4a83c14f719321a2c65abe5321 = L.circleMarker(
+            var marker_8ec4146aff924fa790646d22a5687cf7 = L.marker(
                 [24.45, 93.47],
-                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(feature_group_ed26d04c0fe145cca2dc4ce81b4ce38b);
+                {}
+            ).addTo(feature_group_51f0042ea6024bb5a0130b06957fc50b);
         
     
-        var popup_fab71192d66a4d71a9294d648bc32996 = L.popup({"maxWidth": "100%"});
+            var icon_c09d3368e6b24845bdde8a3342a74e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ec4146aff924fa790646d22a5687cf7.setIcon(icon_c09d3368e6b24845bdde8a3342a74e24);
+        
+    
+        var popup_3e276c732e9e4641b07cf083809228e8 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4ab2284ae0e7433e826d4be71c144a27 = $(`<div id="html_4ab2284ae0e7433e826d4be71c144a27" style="width: 100.0%; height: 100.0%;">Loktak Lake</div>`)[0];
-            popup_fab71192d66a4d71a9294d648bc32996.setContent(html_4ab2284ae0e7433e826d4be71c144a27);
+            var i_frame_3138db86712f433e8cab88e4a397f5fe = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Vm9sY2FubyBJbmZvcm1hdGlvbjo8L2g0PgpOYW1lIDogTG9rdGFrIExha2U=" width="200" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_3e276c732e9e4641b07cf083809228e8.setContent(i_frame_3138db86712f433e8cab88e4a397f5fe);
         
 
-        circle_marker_d3c37c4a83c14f719321a2c65abe5321.bindPopup(popup_fab71192d66a4d71a9294d648bc32996)
+        marker_8ec4146aff924fa790646d22a5687cf7.bindPopup(popup_3e276c732e9e4641b07cf083809228e8)
         ;
 
         
